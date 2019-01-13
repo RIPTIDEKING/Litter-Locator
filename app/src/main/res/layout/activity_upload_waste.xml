@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:padding="9dp"
+            android:layout_marginBottom="15dp"
+            android:layout_above="@id/editText"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"/>
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:id="@+id/fillImgView"
+            android:visibility="invisible"
+            android:layout_height="match_parent">
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/fullImage"
+        />
+
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/back"
+                android:id="@+id/back"
+                android:layout_height="50dp"/>
+
+    </FrameLayout>
+
+    <EditText
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:textAlignment="textStart"
+            android:ems="10"
+            android:maxLines="50"
+            android:lines="7"
+            android:hint="Details of Waste"
+            android:layout_centerInParent="true"
+            android:background="@drawable/border_ta"
+            android:id="@+id/editText" android:gravity="start"/>
+    <EditText
+            android:layout_width="250dp"
+            android:hint="Location"
+            android:background="@drawable/border_ta"
+            android:padding="9dp"
+            android:textColor="#555555"
+            android:textSize="19dp"
+            android:layout_below="@id/editText"
+            android:layout_marginTop="10dp"
+            android:id="@+id/locationBtn"
+            android:layout_centerInParent="true"
+            android:layout_height="40dp"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/selected_pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/logo"
+            android:background="@drawable/border_image"
+            android:layout_centerHorizontal="true"
+    />
+
+    <Button android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Add Photo"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@id/locationBtn"
+            android:textColor="#ffffff"
+            android:padding="7dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/addPhoto"
+            android:backgroundTint="@color/colorPrimary"
+            android:textSize="19dp"
+    />
+    <Button android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Submit"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@id/locationBtn"
+            android:layout_toRightOf="@id/addPhoto"
+            android:textColor="#ffffff"
+            android:padding="7dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/submitBtn"
+            android:backgroundTint="@color/colorPrimary"
+            android:textSize="19dp"
+    />
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/cho_photo"
+            android:layout_height="170dp"
+            android:background="#eeeeee"
+            android:visibility="invisible"
+            android:clickable="true"
+            android:layout_alignParentBottom="true">
+        <ImageButton
+                android:layout_width="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="15dp"
+                android:src="@drawable/down"
+                android:id="@+id/down_btn"
+                android:background="@drawable/border_image"
+                android:adjustViewBounds="true"
+                android:layout_height="30dp"
+        />
+        <ImageButton android:layout_width="100dp"
+                     android:src="@drawable/camera"
+                     android:background="@drawable/border_image"
+                     android:layout_marginLeft="50dp"
+                     android:layout_centerVertical="true"
+                     android:layout_height="100dp"
+                     android:id="@+id/camera_btn"
+        />
+        <ImageButton android:layout_width="100dp"
+                     android:src="@drawable/gallery"
+                     android:background="@drawable/border_image"
+                     android:layout_marginLeft="50dp"
+                     android:layout_toRightOf="@id/camera_btn"
+                     android:layout_centerVertical="true"
+                     android:layout_height="100dp"
+                     android:id="@+id/gallery_btn"
+        />
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY PROFILE"
+            android:layout_centerHorizontal="true"
+            android:textSize="35sp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/markp"
+    />
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:id="@+id/ppic"
+            android:layout_margin="15dp"
+            android:layout_below="@id/markp"
+            android:layout_height="150dp"
+    />
+    <TextView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/dpname"
+            android:text="AYUSH"
+            android:textSize="40dp"
+            android:layout_toRightOf="@id/ppic"
+            android:layout_below="@id/markp"/>
+    <TextView
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/ppic"
+            android:layout_marginTop="25dp"
+            android:text="POINTS: "
+            android:layout_marginLeft="20dp"
+            android:id="@+id/pnts"
+            android:textSize="40dp"
+    />
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/pnts"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20sp"
+            android:text="Change Profile Pic"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:background="#00cf00"
+            android:id="@+id/changedp"
+    />
+</RelativeLayout>
